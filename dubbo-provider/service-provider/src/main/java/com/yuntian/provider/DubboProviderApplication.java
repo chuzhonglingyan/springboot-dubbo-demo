@@ -11,7 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @ Description：${description}
  */
 @SpringBootApplication
-@DubboComponentScan(basePackages = "${dubbo.scan.basePackages}")
 public class DubboProviderApplication {
 
     public static void main(String[] args) {

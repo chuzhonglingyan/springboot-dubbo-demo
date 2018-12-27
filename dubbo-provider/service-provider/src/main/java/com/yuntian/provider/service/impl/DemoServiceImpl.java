@@ -1,14 +1,10 @@
 package com.yuntian.provider.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.yuntian.provider.service.DemoService;
 
-@Service(
-        version = "${dubbo.registry.version}",
-        application = "${dubbo.application.id}",
-        protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}"
-)
+import org.springframework.stereotype.Service;
+
+@Service("demoService")
 public class DemoServiceImpl implements DemoService {
 
     public String sayHello(String name) {
