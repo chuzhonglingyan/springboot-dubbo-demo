@@ -13,8 +13,8 @@
     </dubbo:application>
 
     <!-- 采用直连，不使用注册中心 -->
-    <!--<dubbo:registry address="N/A" />-->
-    <dubbo:registry address="${dubbo.registry.address}" />
+    <dubbo:registry address="N/A" />
+    <!--<dubbo:registry address="${dubbo.registry.address}" />-->
     <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
 
     <dubbo:reference id="demoService" interface="com.yuntian.provider.service.DemoService"

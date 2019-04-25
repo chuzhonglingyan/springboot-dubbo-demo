@@ -8,11 +8,15 @@
     http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
 
-    <!-- 提供方应用信息，用于计算依赖关系 -->
-    <dubbo:application name="${dubbo.application.name}"/>
+    <dubbo:application name="${dubbo.application.name}">
+        <dubbo:parameter key="qos.enable" value="true" />
+        <dubbo:parameter key="qos.accept.foreign.ip" value="false" />
+        <dubbo:parameter key="qos.port" value="44444" />
+    </dubbo:application>
+
 
     <!-- 使用注册中心暴露服务地址 -->
-    <dubbo:registry address="${dubbo.registry.address}" />
+    <dubbo:registry address="${dubbo.registry.address}" register="true" />
 
     <!-- 用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
