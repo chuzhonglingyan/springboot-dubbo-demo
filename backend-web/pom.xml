@@ -6,9 +6,10 @@
 
     <parent>
         <groupId>com.yuntian</groupId>
-        <artifactId>springboot-dubbodemo</artifactId>
+        <artifactId>springboot-dubbo-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
 
     <artifactId>backend-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
