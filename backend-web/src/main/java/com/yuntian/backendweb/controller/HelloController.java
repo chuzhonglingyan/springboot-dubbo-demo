@@ -22,7 +22,7 @@ public class HelloController {
 
     @RequestMapping("/say")
     @ResponseBody
-    public Result say(@RequestParam String msg) {
+    public Result say(String msg) {
         helloService.say(msg);
         return ResultUtil.createSuccess();
     }
